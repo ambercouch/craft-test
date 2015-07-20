@@ -1,0 +1,26 @@
+.content{
+  @extend %container;
+  @extend %layout;
+  //@extend %layout--rev;
+  @include x-rem(font-size, 0);
+  > * {
+    @include x-rem(font-size, 1);
+    //When %layout and %container are the same element
+    @extend %layout--container;
+
+  }
+}
+.content__main{
+  @extend %layout__item;
+  @extend .lap-and-up-four-fifths;
+}
+.content__main--full-width{
+  @extend %layout__item;
+  @extend .one-whole;
+}
+
+.content__widget-area{
+  @extend %layout__item;
+  @extend .lap-and-up-one-fifth;
+  @include x-rem(font-size, 1);
+}

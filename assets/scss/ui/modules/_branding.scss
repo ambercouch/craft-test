@@ -1,0 +1,11 @@
+.branding__title{
+  margin:0;
+  a{
+    text-decoration: none;
+  }
+}
+.branding__description{
+  margin:0;
+  @extend %epsilon;
+  font-weight: 300;
+}

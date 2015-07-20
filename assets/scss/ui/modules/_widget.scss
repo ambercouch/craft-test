@@ -1,0 +1,20 @@
+/*
+ * Global styles for widgets
+ */
+
+.widget{
+  ul{
+    margin-top:0;
+    padding-left: 0;
+  }
+  li{
+    list-style: none;
+    @include inuit-font-size(15px, 1.5);
+  }
+}
+
+.widget__title{
+  @extend .delta;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}

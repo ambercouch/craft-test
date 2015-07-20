@@ -1,0 +1,24 @@
+.site {
+
+}
+
+.site__header {
+  @extend .clearfix;
+  background: #ccc;
+}
+
+.site__navigation {
+}
+
+.site__main {
+  @extend .clearfix;
+}
+
+.site__subsidiary {
+}
+
+.site__footer {
+  @extend .clearfix;
+  background: #ccc;
+}
+

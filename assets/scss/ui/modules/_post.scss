@@ -1,0 +1,41 @@
+.post{
+  margin-bottom: $inuit-base-spacing-unit;
+}
+
+.post__header{
+  margin-bottom: $inuit-base-spacing-unit;
+}
+
+.post__title{
+  margin-bottom: 0;
+  a{
+    text-decoration: none;
+  }
+}
+
+.post__updated{
+  display: none;
+}
+
+.post--audio{
+  @extend .post;
+  //%post--tile
+  padding: $inuit-base-spacing-unit;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(#000, 0.05);
+}
+.post--audio__header{
+  @extend .post__header;
+}
+.post--audio__meta{
+  @extend %milli;
+}
+.post--audio__title{
+  @extend .post__title;
+  //%post--tile
+  margin-top: 0;
+}
+.post--audio__footer{
+   @extend %milli;
+}
+

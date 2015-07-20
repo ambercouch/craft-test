@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-Mar-2015, 21:38:11
+    Author     : Richard
+*/
+.master-header{
+  @extend %container;
+  @extend %layout;
+  @include x-rem(font-size, 0);
+
+  > * {
+    @include x-rem(font-size, 1);
+    //When %layout and %container are the same element
+    @extend %layout--container;
+
+  }
+}
+.master-header__branding{
+  @extend %layout__item;
+  @extend .lap-and-up-one-third;
+}
+
+.master-header__navigation{
+  @extend %layout__item;
+  @extend .lap-and-up-two-thirds;
+}

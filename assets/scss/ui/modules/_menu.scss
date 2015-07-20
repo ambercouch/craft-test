@@ -1,0 +1,24 @@
+.menu{
+  @extend %nav;
+  @extend %nav--stacked;
+  padding: 0;
+}
+
+.menu--main{
+  @extend %nav;
+  @extend %nav--block;
+  padding: 0;
+}
+
+.menu--head{
+  @extend %nav;
+  @extend %nav--block;
+  padding: 0;
+  margin: 0;
+  float: right;
+
+  a{
+    text-decoration: none;
+  }
+
+}
