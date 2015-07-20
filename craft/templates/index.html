@@ -20,14 +20,20 @@
 {% extends "_layout" %}
 
 {% block content %}
-	<h1>{{ entry.title }}</h1>
+  <h1>{{ entry.title }}</h1>
 
-	{{ entry.body }}
-
-	<h2>Recent News</h2>
-	<ul>
-		{% for entry in craft.entries.section('news').limit(5).find() %}
-			<li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
-		{% endfor %}
-	</ul>
+  <div class="artwork">
+    <ul class="artwork__list">
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+      <li class="artwork__item"><div class="artwork__container"></div></li>
+    </ul>
+  </div>
 {% endblock %}
